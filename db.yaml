@@ -18,6 +18,9 @@ services:
 volumes:
   mysql-data:
 
+# INSTALL DOCKER DESKTOP
 # CHECK IF PORT 3306 IS FREE: Get-Process -Id (Get-NetTCPConnection -LocalPort 3306).OwningProcess
 # FREE UP PORT 3306: Stop-Process -Id 12345 -Force
-# RUN DB COMMAND: $ docker-compose -f db.yaml up -d
+# RUN DB: $ docker-compose -f db.yaml up -d
+# CONNECT TO MYSQL DB USING MYSQL WORKBENCH
+
