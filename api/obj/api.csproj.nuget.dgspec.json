@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DotnetCourse\\DotnetApi\\api\\api.csproj": {}
+    "C:\\Users\\ferdi\\Desktop\\Dev\\C#\\DotnetApi\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\DotnetCourse\\DotnetApi\\api\\api.csproj": {
+    "C:\\Users\\ferdi\\Desktop\\Dev\\C#\\DotnetApi\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DotnetCourse\\DotnetApi\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\ferdi\\Desktop\\Dev\\C#\\DotnetApi\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\DotnetCourse\\DotnetApi\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\fhriadel\\.nuget\\packages\\",
-        "outputPath": "C:\\DotnetCourse\\DotnetApi\\api\\obj\\",
+        "projectPath": "C:\\Users\\ferdi\\Desktop\\Dev\\C#\\DotnetApi\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\ferdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferdi\\Desktop\\Dev\\C#\\DotnetApi\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fhriadel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferdi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

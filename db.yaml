@@ -1,17 +1,23 @@
 version: '3.8'
+
 services:
-  sqlserver:
-    image: mcr.microsoft.com/mssql/server
-    container_name: sqlserver
-    ports:
-      - "1433:1433"
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: unless-stopped
     environment:
-      SA_PASSWORD: "YourStrong!Passw0rd"
-      ACCEPT_EULA: "Y"
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
     volumes:
-      - sql_data:/var/opt/mssql
+      - mysql-data:/var/lib/mysql
 
 volumes:
-  sql_data:
+  mysql-data:
 
+# CHECK IF PORT 3306 IS FREE: Get-Process -Id (Get-NetTCPConnection -LocalPort 3306).OwningProcess
+# FREE UP PORT 3306: Stop-Process -Id 12345 -Force
 # RUN DB COMMAND: $ docker-compose -f db.yaml up -d
