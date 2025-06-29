@@ -4,11 +4,13 @@ using Api.Entities;
 using Api.Data;
 using Api.Dtos;
 using Api.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 
 
 namespace Api.Controllers
 {
+  [Authorize]
   [ApiController]
   [Route("api/[controller]")]
   public class UserController(DataContext context, ITokenService tokenService) : ControllerBase
@@ -30,6 +32,7 @@ namespace Api.Controllers
 
 
     // CREATE USER (POST http://localhost:5000/api/User)
+    [AllowAnonymous]
     [HttpPost]
     public async Task<ActionResult<UserDto>> CreateUser(UserDto user)
     {
@@ -62,6 +65,7 @@ namespace Api.Controllers
 
 
     // LOGIN USER (POST http://localhost:5000/api/User/login)
+    [AllowAnonymous]
     [HttpPost("login")]
     public async Task<ActionResult<UserDto>> LoginUser(UserDto user)
     {
